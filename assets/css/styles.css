@@ -772,6 +772,11 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-t-sm {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+}
+
 .rounded-br-2xl {
   border-bottom-right-radius: 1rem;
 }
