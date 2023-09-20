@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .wrapper {
+        @apply w-[90%] max-w-screen-xl mx-auto overflow-hidden;
+    }
+    .purple-button {
+        @apply bg-purple-700 px-4 py-4 flex items-center justify-center text-white font-bold rounded-lg shadow-lg hover:bg-purple-900 hover:shadow-2xl transition-all cursor-pointer;
+    }
+}
+@layer components {
+}
+@layer utilities {
+    .clip-circle-0 {
+        clip-path: circle(0% at top right);
+    }
+    .clip-circle-full {
+        clip-path: circle(150% at top right);
+    }
+}
