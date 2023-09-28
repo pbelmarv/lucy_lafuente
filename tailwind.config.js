@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 dancing: "Dancing Script', cursive",
+                caveat: ["Caveat", "cursive"],
             },
             colors: {
                 schooner: {
