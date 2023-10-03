@@ -16,7 +16,7 @@
         <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
             <header>
                 <nav
-                    class="bg-white/80 flex h-20 px-4 items-center justify-between shadow-xl fixed w-[90%] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+                    class="bg-white/80 flex h-20 px-4 items-center justify-between shadow-xl fixed w-[90%] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl z-50"
                 >
                     <a href="./" class="w-1/2 max-w-[200px]">
                         <img
@@ -169,7 +169,7 @@
                         </p>
 
                         <figure
-                            class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-200"
+                            class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-100"
                         >
                             <!-- <img
                                 class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
@@ -235,12 +235,123 @@
 
                 <section class="bg-slate-50 py-20" id="gallery">
                     <div class="wrapper text-center">
-                        <h2 class="text-purple-700 text-3xl mb-6 md:text-4xl">
+                        <h2 class="text-purple-700 text-3xl mb-2 md:text-4xl">
                             Galería
                         </h2>
 
+                        <!-- ---------------------------->
                         <div
-                            class="mt-12 grid gap-12 md:grid-flow-col auto-cols-fr"
+                            class="flex min-h-screen items-center justify-center"
+                        >
+                            <div
+                                class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"
+                            >
+                                <div
+                                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 -z-0"
+                                >
+                                    <div class="h-96 w-72">
+                                        <img
+                                            class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                                            src="./assets/images/gallery/jupiter.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/40 group-hover:via-black/50 group-hover:to-black/40"
+                                    ></div>
+                                    <div
+                                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0"
+                                    >
+                                        <h1
+                                            class="font-dancing text-3xl font-bold text-white"
+                                        >
+                                            Júpiter
+                                        </h1>
+                                        <p
+                                            class="mb-3 h-36 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                        >
+                                            Combarbalita y Acero.
+                                        </p>
+                                        <button
+                                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
+                                        >
+                                            Más Información
+                                        </button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                                >
+                                    <div class="h-96 w-72">
+                                        <img
+                                            class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                                            src="./assets/images/gallery/neruda_lateral_01.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/40 group-hover:via-black/50 group-hover:to-black/40"
+                                    ></div>
+                                    <div
+                                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0"
+                                    >
+                                        <h1
+                                            class="font-dancing text-3xl font-bold text-white"
+                                        >
+                                            Pablo Neruda
+                                        </h1>
+                                        <p
+                                            class="mb-3 h-36 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                        >
+                                            Escultura de Pablo Neruda ubicada en
+                                            la Plaza Mena.
+                                        </p>
+                                        <button
+                                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
+                                        >
+                                            Más Información
+                                        </button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                                >
+                                    <div class="h-96 w-72">
+                                        <img
+                                            class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                                            src="./assets/images/gallery/miradas.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/40 group-hover:via-black/60 group-hover:to-black/40"
+                                    ></div>
+                                    <div
+                                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0"
+                                    >
+                                        <h1
+                                            class="font-dancing text-3xl font-bold text-white"
+                                        >
+                                            Miradas
+                                        </h1>
+                                        <p
+                                            class="mb-3 h-36 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                        >
+                                            Granito y Bronce.
+                                        </p>
+                                        <button
+                                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
+                                        >
+                                            Más Información
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------------------------->
+
+                        <!-- <div
+                            class="mt-4 grid gap-12 md:grid-flow-col auto-cols-fr"
                         >
                             <article class="w-4/5 mx-auto space-y-4">
                                 <img
@@ -284,11 +395,11 @@
                                     Granito y Bronce.
                                 </p>
                             </article>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
 
-                <section class="bg-slate-50 py-20" id="news">
+                <section class="bg-slate-50 py-5" id="news">
                     <div class="wrapper text-center">
                         <h2 class="text-purple-700 text-3xl mb-6 md:text-4xl">
                             Noticias
