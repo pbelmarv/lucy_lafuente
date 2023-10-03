@@ -32,6 +32,9 @@
     .timeline-description {
         @apply text-slate-500;
     }
+    .figcaption-title {
+        @apply text-sky-700 dark:text-sky-600 text-lg;
+    }
 }
 @layer components {
 }

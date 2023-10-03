@@ -473,14 +473,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.ul-xl-list {
-  margin-bottom: 0.75rem;
-  list-style-type: disc;
-  text-align: justify;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .sub-title {
   font-family: Dancing Script', cursive;
   font-size: 1.875rem;
@@ -621,6 +613,20 @@ video {
 .timeline-description {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.figcaption-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .figcaption-title {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+  }
 }
 
 *, ::before, ::after {
@@ -769,12 +775,12 @@ video {
   margin-right: auto;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-6 {
@@ -837,6 +843,10 @@ video {
   height: 100vh;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -867,6 +877,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-\[200px\] {
@@ -963,6 +977,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-t-sm {
   border-top-left-radius: 0.125rem;
   border-top-right-radius: 0.125rem;
@@ -1022,6 +1040,11 @@ video {
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .bg-open-menu {
   background-image: url('../images/system/menu.svg');
 }
@@ -1043,6 +1066,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1061,6 +1088,15 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-16 {
@@ -1085,10 +1121,6 @@ video {
 
 .pl-10 {
   padding-left: 2.5rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
 }
 
 .pl-14 {
@@ -1184,6 +1216,11 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.text-purple-600 {
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
 .text-purple-700 {
   --tw-text-opacity: 1;
   color: rgb(126 34 206 / var(--tw-text-opacity));
@@ -1199,9 +1236,24 @@ video {
   color: rgb(59 7 100 / var(--tw-text-opacity));
 }
 
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.text-sky-700 {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1344,6 +1396,33 @@ video {
           clip-path: circle(150% at top right);
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-slate-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-slate-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-sky-400 {
+    --tw-text-opacity: 1;
+    color: rgb(56 189 248 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-sky-600 {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-slate-500 {
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:pl-32 {
     padding-left: 8rem;
@@ -1376,8 +1455,16 @@ video {
     height: 750px;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:max-w-screen-md {
@@ -1388,12 +1475,20 @@ video {
     grid-auto-flow: column;
   }
 
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
   .md\:bg-transparent {
     background-color: transparent;
   }
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-3 {
@@ -1407,6 +1502,10 @@ video {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 
   .md\:text-4xl {
